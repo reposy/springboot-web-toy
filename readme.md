@@ -1,1 +1,1 @@
-Gtiflow 연습
+Gitflow 연습
