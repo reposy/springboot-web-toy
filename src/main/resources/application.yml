@@ -11,6 +11,9 @@ spring:
       ddl-auto: update
   h2:
     console:
-      enabled: true # H2 ?
+      enabled: true # H2 web ui
       path: /h2-console
 
+jwt:
+  secret: toy-secret-key
+  expiration: 3600 # seconds(=1hour)

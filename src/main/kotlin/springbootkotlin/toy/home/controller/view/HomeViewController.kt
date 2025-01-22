@@ -1,11 +1,11 @@
-package springbootkotlin.toy.controller
+package springbootkotlin.toy.home.controller.view
 
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
 
 @Controller
-class HomeController {
+class HomeViewController {
     @GetMapping("")
     fun home(model: Model): String {
         model.addAttribute("title", "Welcome to Home Page")

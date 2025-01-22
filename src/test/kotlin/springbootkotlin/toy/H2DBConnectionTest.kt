@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import springbootkotlin.toy.entity.User
-import springbootkotlin.toy.repository.UserRepository
+import springbootkotlin.toy.user.login.repository.UserRepository
 
 @SpringBootTest
 class H2DBConnectionTest {
