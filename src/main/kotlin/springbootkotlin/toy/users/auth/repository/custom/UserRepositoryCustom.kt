@@ -1,4 +1,4 @@
-package springbootkotlin.toy.user.login.repository.custom
+package springbootkotlin.toy.users.auth.repository.custom
 
 import springbootkotlin.toy.entity.User
 

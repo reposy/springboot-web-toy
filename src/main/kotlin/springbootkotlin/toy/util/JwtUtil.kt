@@ -1,4 +1,4 @@
-package springbootkotlin.toy.util.jwt
+package springbootkotlin.toy.util
 
 import io.jsonwebtoken.Claims
 import io.jsonwebtoken.Jwts
@@ -36,15 +36,15 @@ class JwtUtil(
         }
     }
 
-    fun getClaimsFromToken(token: String): Map<String, Any>? {
+    fun getClaimsFromToken(token: String): Claims {
         return try {
             Jwts.parser() // parser() 메서드 사용
                 .verifyWith(jwtSigningKey) // 서명 키 검증 설정
                 .build()
-                .parseUnsecuredClaims(token)
+                .parseSignedClaims(token)
+                //.parseUnsecuredClaims(token)
+                //.parseClaimsJws(token)
                 .payload
-                .entries
-                .associate { it.key to it.value }
         }  catch (e: Exception) {
             throw IllegalArgumentException("Invalid or malformed token", e)
         }

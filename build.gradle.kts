@@ -29,6 +29,10 @@ dependencies {
     // H2 Database
     runtimeOnly("com.h2database:h2")
 
+    // jackson module kotlin
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.18.2")
+
+    // jsonwebtoken
     implementation("io.jsonwebtoken:jjwt-api:0.12.6")
     runtimeOnly("io.jsonwebtoken:jjwt-impl:0.12.6")
     runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.12.6")
@@ -47,6 +51,9 @@ dependencies {
     // Kotlin
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+
+    // mockk
+    testImplementation("io.mockk:mockk:1.13.16")
 
     // Junit
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")

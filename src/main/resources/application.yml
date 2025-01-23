@@ -15,5 +15,11 @@ spring:
       path: /h2-console
 
 jwt:
-  secret: toy-secret-key
+  secret: toy_secret
   expiration: 3600 # seconds(=1hour)
+
+logging:
+  level:
+    root: INFO
+    springbootkotlin:
+      toy: DEBUG

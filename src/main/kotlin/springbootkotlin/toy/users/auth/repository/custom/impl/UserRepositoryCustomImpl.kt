@@ -1,10 +1,10 @@
-package springbootkotlin.toy.user.login.repository.custom.impl
+package springbootkotlin.toy.users.auth.repository.custom.impl
 
 import com.querydsl.jpa.impl.JPAQueryFactory
 import org.springframework.stereotype.Repository
 import springbootkotlin.toy.entity.QUser
 import springbootkotlin.toy.entity.User
-import springbootkotlin.toy.user.login.repository.custom.UserRepositoryCustom
+import springbootkotlin.toy.users.auth.repository.custom.UserRepositoryCustom
 
 @Repository
 class UserRepositoryCustomImpl(

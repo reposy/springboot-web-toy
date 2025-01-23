@@ -3,8 +3,8 @@ package springbootkotlin.toy.repository.custom
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.transaction.annotation.Transactional
-import springbootkotlin.toy.user.login.repository.UserRepository
-import springbootkotlin.toy.user.login.repository.custom.impl.UserRepositoryCustomImpl
+import springbootkotlin.toy.users.auth.repository.UserRepository
+import springbootkotlin.toy.users.auth.repository.custom.impl.UserRepositoryCustomImpl
 
 @SpringBootTest
 @Transactional

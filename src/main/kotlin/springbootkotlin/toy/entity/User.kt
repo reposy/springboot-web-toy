@@ -8,7 +8,10 @@ data class User(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
     val userId: String,
-    val password: String,
+    val encryptedPassword: String,
     val name: String,
-    val email: String
+    val email: String,
+
+    val role: String = "ROLE_USER_NORMAL",
+    val authority: String = "AUTH_USER_NORMAL"
 )
